@@ -11,7 +11,7 @@ define("@scom/scom-network-list", ["require", "exports", "@ijstech/components"],
         return [
             {
                 chainId: 1,
-                chainName: "Ethereum Mainnet",
+                chainName: "Ethereum",
                 rpcUrls: ['https://mainnet.infura.io/v3/{INFURA_ID}'],
                 blockExplorerUrls: ['https://etherscan.io/'],
                 nativeCurrency: {
@@ -23,7 +23,7 @@ define("@scom/scom-network-list", ["require", "exports", "@ijstech/components"],
             },
             {
                 chainId: 56,
-                chainName: 'Binance Mainnet',
+                chainName: 'BNB Chain',
                 rpcUrls: ['https://bsc-dataseed.binance.org'],
                 blockExplorerUrls: ['https://bscscan.com'],
                 nativeCurrency: {
@@ -35,7 +35,7 @@ define("@scom/scom-network-list", ["require", "exports", "@ijstech/components"],
             },
             {
                 chainId: 97,
-                chainName: 'Binance Testnet',
+                chainName: 'BNB Chain Testnet',
                 rpcUrls: ['https://data-seed-prebsc-1-s1.binance.org:8545'],
                 blockExplorerUrls: ['https://testnet.bscscan.com'],
                 nativeCurrency: {
@@ -69,8 +69,32 @@ define("@scom/scom-network-list", ["require", "exports", "@ijstech/components"],
                 }
             },
             {
+                chainId: 25,
+                chainName: "Cronos",
+                rpcUrls: ['https://evm.cronos.org'],
+                blockExplorerUrls: ['https://cronoscan.com/'],
+                nativeCurrency: {
+                    decimals: 18,
+                    name: 'CRO',
+                    symbol: 'CRO'
+                },
+                image: fullPath('img/cronosMainnet.svg')
+            },
+            {
+                chainId: 338,
+                chainName: "Cronos Testnet",
+                rpcUrls: ['https://evm-t3.cronos.org'],
+                blockExplorerUrls: ['https://testnet.cronoscan.com/'],
+                nativeCurrency: {
+                    decimals: 18,
+                    name: 'CRO',
+                    symbol: 'CRO'
+                },
+                image: fullPath('img/cronosMainnet.svg')
+            },
+            {
                 chainId: 80001,
-                chainName: "Mumbai",
+                chainName: "Mumbai Testnet",
                 rpcUrls: ['https://matic-mumbai.chainstacklabs.com'],
                 blockExplorerUrls: ['https://mumbai.polygonscan.com/'],
                 nativeCurrency: {
@@ -82,7 +106,7 @@ define("@scom/scom-network-list", ["require", "exports", "@ijstech/components"],
             },
             {
                 chainId: 43113,
-                chainName: "Avalanche FUJI C-Chain",
+                chainName: "Avalanche FUJI Testnet",
                 rpcUrls: ['https://api.avax-test.network/ext/bc/C/rpc'],
                 blockExplorerUrls: ['https://testnet.snowtrace.io/'],
                 nativeCurrency: {
@@ -94,7 +118,7 @@ define("@scom/scom-network-list", ["require", "exports", "@ijstech/components"],
             },
             {
                 chainId: 43114,
-                chainName: "Avalanche Mainnet C-Chain",
+                chainName: "Avalanche",
                 rpcUrls: ['https://api.avax.network/ext/bc/C/rpc'],
                 blockExplorerUrls: ['https://snowtrace.io/'],
                 nativeCurrency: {
@@ -118,7 +142,7 @@ define("@scom/scom-network-list", ["require", "exports", "@ijstech/components"],
             },
             {
                 chainId: 250,
-                chainName: "Fantom Opera",
+                chainName: "Fantom",
                 rpcUrls: ['https://rpc.ftm.tools/'],
                 blockExplorerUrls: ['https://ftmscan.com/', 'https://explorer.fantom.network/'],
                 nativeCurrency: {
