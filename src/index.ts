@@ -152,7 +152,7 @@ export default function getNetworkList(): INetwork[] {
                 name: 'FTM',
                 symbol: 'FTM'
             },
-            image: fullPath('img/avax.svg')
+            image: fullPath('img/fantom-ftm-logo.svg')
         },
         {
             chainId: 13370,
