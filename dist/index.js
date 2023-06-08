@@ -48,7 +48,7 @@ define("@scom/scom-network-list", ["require", "exports", "@ijstech/components"],
             {
                 chainId: 137,
                 chainName: "Polygon",
-                rpcUrls: ['https://polygon-rpc.com'],
+                rpcUrls: ['https://rpc.ankr.com/polygon'],
                 blockExplorerUrls: ['https://polygonscan.com/'],
                 nativeCurrency: {
                     decimals: 18,

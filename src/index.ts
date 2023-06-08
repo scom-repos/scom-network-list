@@ -50,7 +50,7 @@ export default function getNetworkList(): INetwork[] {
         {
             chainId: 137,
             chainName: "Polygon",
-            rpcUrls: ['https://polygon-rpc.com'],
+            rpcUrls: ['https://rpc.ankr.com/polygon'],
             blockExplorerUrls: ['https://polygonscan.com/'],
             nativeCurrency: {
                 decimals: 18,
