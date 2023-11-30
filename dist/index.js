@@ -235,6 +235,18 @@ define("@scom/scom-network-list", ["require", "exports", "@ijstech/components"],
                     symbol: 'ETH'
                 },
                 image: fullPath('img/zkSyncEra.svg')
+            },
+            {
+                chainId: 1442,
+                chainName: "Polygon zkEVM Testnet",
+                rpcUrls: ['https://rpc.public.zkevm-test.net'],
+                blockExplorerUrls: ['https://testnet-zkevm.polygonscan.com'],
+                nativeCurrency: {
+                    decimals: 18,
+                    name: 'ETH',
+                    symbol: 'ETH'
+                },
+                image: fullPath('img/polygonZkEvm.svg')
             }
         ];
     }
