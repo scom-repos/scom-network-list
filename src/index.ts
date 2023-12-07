@@ -249,6 +249,18 @@ export default function getNetworkList(): INetwork[] {
                 symbol: 'ETH'
             },
             image: fullPath('img/polygonZkEvm.svg')
+        },
+        {
+            chainId: 5001,
+            chainName: "Mantle Testnet",
+            rpcUrls: ['https://rpc.testnet.mantle.xyz'],
+            blockExplorerUrls: ['https://explorer.testnet.mantle.xyz'],
+            nativeCurrency: {
+                decimals: 18,
+                name: 'MNT',
+                symbol: 'MNT'
+            },
+            image: fullPath('img/mantle.svg')
         }
     ]
 }
