@@ -249,6 +249,18 @@ define("@scom/scom-network-list", ["require", "exports", "@ijstech/components"],
                 image: fullPath('img/polygonZkEvm.svg')
             },
             {
+                chainId: 5000,
+                chainName: "Mantle",
+                rpcUrls: ['https://rpc.mantle.xyz'],
+                blockExplorerUrls: ['https://explorer.mantle.xyz'],
+                nativeCurrency: {
+                    decimals: 18,
+                    name: 'MNT',
+                    symbol: 'MNT'
+                },
+                image: fullPath('img/mantle.svg')
+            },
+            {
                 chainId: 5001,
                 chainName: "Mantle Testnet",
                 rpcUrls: ['https://rpc.testnet.mantle.xyz'],
@@ -259,6 +271,30 @@ define("@scom/scom-network-list", ["require", "exports", "@ijstech/components"],
                     symbol: 'MNT'
                 },
                 image: fullPath('img/mantle.svg')
+            },
+            {
+                chainId: 3441005,
+                chainName: "Manta Testnet",
+                rpcUrls: ['https://pacific-rpc.testnet.manta.network/http'],
+                blockExplorerUrls: ['https://pacific-explorer.testnet.manta.network'],
+                nativeCurrency: {
+                    decimals: 18,
+                    name: 'MANTA',
+                    symbol: 'MANTA'
+                },
+                image: fullPath('img/manta.svg')
+            },
+            {
+                chainId: 169,
+                chainName: "Manta",
+                rpcUrls: ['https://pacific-rpc.manta.network/http'],
+                blockExplorerUrls: ['https://pacific-explorer.manta.network'],
+                nativeCurrency: {
+                    decimals: 18,
+                    name: 'ETH',
+                    symbol: 'ETH'
+                },
+                image: fullPath('img/manta.svg')
             }
         ];
     }
