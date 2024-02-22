@@ -297,6 +297,18 @@ export default function getNetworkList(): INetwork[] {
                 symbol: 'ETH'
             },
             image: fullPath('img/manta.svg')
+        },
+        {
+            chainId: 168587773,
+            chainName: "Blast Sepolia",
+            rpcUrls: ['https://sepolia.blast.io'],
+            blockExplorerUrls: ['https://testnet.blastscan.io'],
+            nativeCurrency: {
+                decimals: 18,
+                name: 'ETH',
+                symbol: 'ETH'
+            },
+            image: fullPath('img/blast.svg')
         }
     ]
 }
