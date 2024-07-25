@@ -1,7 +1,13 @@
-define("@scom/scom-network-list", ["require", "exports", "@ijstech/components"], function (require, exports, components_1) {
+define("@scom/scom-network-list", ["require", "exports"], function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    let moduleDir = components_1.application.currentModuleDir;
+    exports.getNetworkList = void 0;
+    // import { application } from '@ijstech/components';
+    let moduleDir = '';
+    if (typeof window !== 'undefined') {
+        const application = window['application'];
+        moduleDir = application.currentModuleDir;
+    }
     function fullPath(path) {
         if (path.indexOf('://') > 0)
             return path;
@@ -311,4 +317,5 @@ define("@scom/scom-network-list", ["require", "exports", "@ijstech/components"],
         ];
     }
     exports.default = getNetworkList;
+    exports.getNetworkList = getNetworkList;
 });
