@@ -1,6 +1,6 @@
 {
     "name": "@scom/scom-network-list",
-    "version": "0.1.9",
+    "version": "0.1.10",
     "main": "lib/index.js",
     "plugin": "dist/index.js",
     "pluginTypes": "pluginTypes/index.d.ts",
@@ -20,6 +20,6 @@
         "@ijstech/compiler": "^0.1.22"
     },
     "scripts": {
-        "build": "rm -rf dist && npx @ijstech/compiler && bash ./scripts/copy.bash"
+        "build": "rm -rf dist && rm -rf lib && npx @ijstech/compiler && bash ./scripts/copy.bash"
     }
 }
