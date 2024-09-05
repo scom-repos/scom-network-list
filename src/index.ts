@@ -233,9 +233,21 @@ export default function getNetworkList(): INetwork[] {
         },
         {
             chainId: 280,
-            chainName: "zkSync Era Testnet",
+            chainName: "zkSync Era Goerli", //deprecated
             rpcUrls: ['https://testnet.era.zksync.dev'],
             blockExplorerUrls: ['https://goerli.explorer.zksync.io/tx/'],
+            nativeCurrency: {
+                decimals: 18,
+                name: 'ETH',
+                symbol: 'ETH'
+            },
+            image: fullPath('img/zkSyncEra.svg')
+        },
+        {
+            chainId: 300,
+            chainName: "ZKsync Era Sepolia",
+            rpcUrls: ['https://sepolia.era.zksync.dev'],
+            blockExplorerUrls: ['https://sepolia.explorer.zksync.io/tx/'],
             nativeCurrency: {
                 decimals: 18,
                 name: 'ETH',
