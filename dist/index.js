@@ -325,7 +325,31 @@ define("@scom/scom-network-list", ["require", "exports"], function (require, exp
                     symbol: 'ETH'
                 },
                 image: fullPath('img/blast.svg')
-            }
+            },
+            {
+                chainId: 57054,
+                chainName: "Sonic Blaze Testnet",
+                rpcUrls: ['https://rpc.blaze.soniclabs.com'],
+                blockExplorerUrls: ['https://testnet.sonicscan.org/tx/'],
+                nativeCurrency: {
+                    decimals: 18,
+                    name: 'S',
+                    symbol: 'S'
+                },
+                image: fullPath('img/sonic.svg')
+            },
+            {
+                chainId: 146,
+                chainName: "Sonic",
+                rpcUrls: ['https://rpc.soniclabs.com'],
+                blockExplorerUrls: ['https://sonicscan.org/tx/'],
+                nativeCurrency: {
+                    decimals: 18,
+                    name: 'S',
+                    symbol: 'S'
+                },
+                image: fullPath('img/sonic.svg')
+            },
         ];
     }
     exports.default = getNetworkList;
