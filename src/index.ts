@@ -351,6 +351,30 @@ export default function getNetworkList(): INetwork[] {
             },
             image: fullPath('img/sonic.svg')
         },
+        {
+            chainId: 2021,
+            chainName: "Ronin Saigon Testnet",
+            rpcUrls: ['https://saigon-testnet.roninchain.com/rpc'],
+            blockExplorerUrls: ['https://saigon-app.roninchain.com/tx/'],
+            nativeCurrency: {
+                decimals: 18,
+                name: 'RON',
+                symbol: 'RON'
+            },
+            image: fullPath('img/ronin.svg')
+        },
+        {
+            chainId: 2020,
+            chainName: "Ronin",
+            rpcUrls: ['https://api.roninchain.com/rpc'],
+            blockExplorerUrls: ['https://app.roninchain.com/tx/'],
+            nativeCurrency: {
+                decimals: 18,
+                name: 'RON',
+                symbol: 'RON'
+            },
+            image: fullPath('img/ronin.svg')
+        },
     ]
 }
 
