@@ -30,7 +30,7 @@ define("@scom/scom-network-list", ["require", "exports"], function (require, exp
             {
                 chainId: 17000,
                 chainName: "Ethereum Holesky",
-                rpcUrls: ['https://mainnet.holesky.io/v3/{INFURA_ID}'],
+                rpcUrls: ['https://holesky.infura.io/v3/{INFURA_ID}'],
                 blockExplorerUrls: ['https://holesky.etherscan.io/'],
                 nativeCurrency: {
                     decimals: 18,
