@@ -28,6 +28,18 @@ define("@scom/scom-network-list", ["require", "exports"], function (require, exp
                 image: fullPath('img/ethereumNetwork.svg')
             },
             {
+                chainId: 17000,
+                chainName: "Ethereum Holesky",
+                rpcUrls: ['https://holesky.infura.io/v3/{INFURA_ID}'],
+                blockExplorerUrls: ['https://holesky.etherscan.io/'],
+                nativeCurrency: {
+                    decimals: 18,
+                    name: 'ETH',
+                    symbol: 'ETH'
+                },
+                image: fullPath('img/ethereumNetwork.svg')
+            },
+            {
                 chainId: 56,
                 chainName: 'BNB Chain',
                 rpcUrls: ['https://bsc-dataseed.binance.org'],
