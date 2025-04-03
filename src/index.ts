@@ -19,7 +19,7 @@ export default function getNetworkList(): INetwork[] {
         {
             chainId: 1,
             chainName: "Ethereum",
-            rpcUrls: [],
+            rpcUrls: ['https://mainnet.infura.io/v3/{INFURA_ID}'],
             blockExplorerUrls: ['https://etherscan.io/'],
             nativeCurrency: {
                 decimals: 18,
@@ -31,7 +31,7 @@ export default function getNetworkList(): INetwork[] {
         {
             chainId: 17000,
             chainName: "Ethereum Holesky",
-            rpcUrls: [],
+            rpcUrls: ['https://holesky.infura.io/v3/{INFURA_ID}'],
             blockExplorerUrls: ['https://holesky.etherscan.io/'],
             nativeCurrency: {
                 decimals: 18,
