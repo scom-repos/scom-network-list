@@ -1,6 +1,6 @@
 {
     "name": "@scom/scom-network-list",
-    "version": "0.1.14",
+    "version": "0.1.15",
     "main": "lib/index.js",
     "plugin": "dist",
     "pluginTypes": "pluginTypes/index.d.ts",
