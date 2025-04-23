@@ -30,7 +30,7 @@ define("@scom/scom-network-list", ["require", "exports"], function (require, exp
             {
                 chainId: 11155111,
                 chainName: "Ethereum Sepolia",
-                rpcUrls: ['https://holesky.infura.io/v3/{INFURA_ID}'],
+                rpcUrls: ['https://sepolia.infura.io/v3/{INFURA_ID}'],
                 blockExplorerUrls: ['https://sepolia.etherscan.io/'],
                 nativeCurrency: {
                     decimals: 18,
