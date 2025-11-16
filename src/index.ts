@@ -163,7 +163,7 @@ export default function getNetworkList(): INetwork[] {
             chainId: 4002,
             chainName: "Fantom Testnet",
             rpcUrls: ['https://rpc.testnet.fantom.network/'],
-            blockExplorerUrls: ['https://testnet.ftmscan.com/', 'https://explorer.testnet.fantom.network/'],
+            blockExplorerUrls: ['https://explorer.testnet.fantom.network/'],
             nativeCurrency: {
                 decimals: 18,
                 name: 'FTM',
@@ -174,8 +174,8 @@ export default function getNetworkList(): INetwork[] {
         {
             chainId: 250,
             chainName: "Fantom",
-            rpcUrls: ['https://rpc.ftm.tools/'],
-            blockExplorerUrls: ['https://ftmscan.com/', 'https://explorer.fantom.network/'],
+            rpcUrls: ['https://rpcapi.fantom.network'],
+            blockExplorerUrls: ['https://explorer.fantom.network/'],
             nativeCurrency: {
                 decimals: 18,
                 name: 'FTM',
